@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ServerComponentComponent } from './server-component.component';
+import { EnvironmentComponent } from './environment.component';
 
-describe('ServerComponentComponent', () => {
-  let component: ServerComponentComponent;
-  let fixture: ComponentFixture<ServerComponentComponent>;
+describe('EnvironmentComponent', () => {
+  let component: EnvironmentComponent;
+  let fixture: ComponentFixture<EnvironmentComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ServerComponentComponent]
+      imports: [EnvironmentComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ServerComponentComponent);
+    fixture = TestBed.createComponent(EnvironmentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
