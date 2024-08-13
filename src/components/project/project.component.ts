@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { EnvironmentComponent } from '../environment/environment.component';
 import { Project } from '../../classes/Project';
 
@@ -8,6 +8,7 @@ import { Project } from '../../classes/Project';
   imports: [EnvironmentComponent],
   templateUrl: './project.component.html',
   styleUrl: './project.component.css',
+  encapsulation: ViewEncapsulation.None,
 })
 export class ProjectComponent {
   @Input() project: Project = new Project('defaultProject', []);

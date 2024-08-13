@@ -1,12 +1,12 @@
-<div className="row">
-  <div className="col-sm-12 col-md-12">
+<div class="row">
+  <div class="col-sm-12 col-md-12">
     <h5>{{ environment.name }}</h5>
   </div>
 </div>
-<div className="row">
-  <div className="col-sm-6 col-md-4">
-    @for (server of environment.servers; track environment.name) {
+<div class="row">
+  @for (server of environment.servers; track environment.name) {
+  <div class="col-sm-6 col-md-4">
     <app-server [server]="server"></app-server>
-    }
   </div>
+  }
 </div>
