@@ -12,9 +12,11 @@ export class ProjectService {
   constructor() {
     this.projects = [
       new Project('Containers', [
-        new Environment('DEV', [new Server('dev', true)]),
-        new Environment('TST', [new Server('tst', true)]),
-        new Environment('ACC', [new Server('acc', true)]),
+        new Environment('', [
+          new Server('dev', true),
+          new Server('tst', true),
+          new Server('acc', true),
+        ]),
       ]),
       new Project('Virtual machines', [
         new Environment('DEV', [new Server('v04l9431', false)]),
