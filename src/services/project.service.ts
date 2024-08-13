@@ -21,7 +21,6 @@ export class ProjectService {
       new Project('Virtual machines', [
         new Environment('DEV', [new Server('v04l9431', false)]),
         new Environment('TST', [
-          new Server('v03l0036', false),
           new Server('v03l0037', false),
           new Server('v03l0038', false),
         ]),
