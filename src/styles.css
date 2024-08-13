@@ -19,7 +19,7 @@ app-root {
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #ffffff;
   text-decoration: inherit;
 }
 a:hover {
@@ -67,6 +67,7 @@ button:focus-visible {
   }
 
   a:hover {
+    cursor: pointer;
     color: #747bff;
   }
   button {
@@ -83,6 +84,7 @@ button:focus-visible {
   }
 
   a:hover {
+    cursor: pointer;
     color: #747bff;
   }
   button {

@@ -1,8 +1,11 @@
 <main>
-  <img [ngSrc]="logoUrl" [alt]="logoAlt" width="224" height="78" />
-  @for (project of projects; track project.name) {
-  <app-project [project]="project"></app-project>
-  }
-</main>
+  <a routerLink="/">
+    <img [ngSrc]="logoUrl" [alt]="logoAlt" width="224" height="78" />
+  </a>
 
-<router-outlet />
+  <nav>
+    <a routerLink="/position-increment"><span>Tools</span> </a>
+  </nav>
+
+  <router-outlet></router-outlet>
+</main>

@@ -1,0 +1,24 @@
+<h1>Position convert</h1>
+<p>
+  This tool helps you to quickly change the Position values for mpp classes :D
+</p>
+<main>
+  <div class="grid-container" [formGroup]="positionForm">
+    <textarea
+      formControlName="input"
+      id="input"
+      rows="10"
+      class="grid-item item1"
+    ></textarea>
+    <div class="grid-item item2">
+      <span class="material-symbols-outlined">-></span>
+    </div>
+    <textarea
+      formControlName="output"
+      id="output"
+      rows="10"
+      class="grid-item item3"
+      readonly
+    ></textarea>
+  </div>
+</main>
