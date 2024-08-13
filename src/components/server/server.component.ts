@@ -12,8 +12,9 @@ import Server from '../../classes/Server';
   encapsulation: ViewEncapsulation.None,
 })
 export class ServerComponent implements OnInit {
-  @Input() server: Server;
-  @Input() isContainer = false;
+  @Input()
+  server: Server;
+  isContainer = false;
   status: Status;
 
   constructor(private serverService: ServerService) {
