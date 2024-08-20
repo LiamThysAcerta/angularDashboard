@@ -1,9 +1,7 @@
 export default class Server {
   name: string;
-  isContainer: boolean;
 
-  constructor(name: string = '', isContainer: boolean = false) {
+  constructor(name: string = '') {
     this.name = name;
-    this.isContainer = isContainer;
   }
 }

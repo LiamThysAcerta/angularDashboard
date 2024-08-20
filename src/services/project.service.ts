@@ -13,21 +13,28 @@ export class ProjectService {
     this.projects = [
       new Project('Containers', [
         new Environment('', [
-          new Server('dev', true),
-          new Server('tst', true),
-          new Server('acc', true),
+          new Server('dev'),
+          new Server('tst'),
+          new Server('acc'),
         ]),
       ]),
       new Project('Virtual machines', [
-        new Environment('DEV', [new Server('v04l9431', false)]),
+        new Environment('DEV', [new Server('v04l9431')]),
         new Environment('TST', [
-          new Server('v03l0037', false),
-          new Server('v03l0038', false),
+          new Server('v03l0037'),
+          new Server('v03l0038'),
         ]),
         new Environment('ACC', [
-          new Server('v02l0036', false),
-          new Server('v02l0037', false),
-          new Server('v02l0038', false),
+          new Server('v02l0036'),
+          new Server('v02l0037'),
+          new Server('v02l0038'),
+        ]),
+      ]),
+      new Project('Containers dicco-rest', [
+        new Environment('', [
+          new Server('dev'),
+          new Server('tst'),
+          new Server('acc'),
         ]),
       ]),
     ];

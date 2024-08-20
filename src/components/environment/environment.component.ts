@@ -12,7 +12,8 @@ import Server from '../../classes/Server';
   encapsulation: ViewEncapsulation.None,
 })
 export class EnvironmentComponent {
+  @Input() project: String = '';
   @Input() environment: Environment = new Environment('default', [
-    new Server('v00l0000', false),
+    new Server('v00l0000'),
   ]);
 }

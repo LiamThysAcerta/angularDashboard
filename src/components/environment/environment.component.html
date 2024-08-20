@@ -6,7 +6,7 @@
 <div class="row">
   @for (server of environment.servers; track environment.name) {
   <div class="col-sm-6 col-md-4">
-    <app-server [server]="server"></app-server>
+    <app-server [project]="project" [server]="server"></app-server>
   </div>
   }
 </div>

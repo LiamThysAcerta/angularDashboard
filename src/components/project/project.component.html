@@ -12,7 +12,10 @@
 <div class="row">
   @for (environment of project.environments; track project.name) {
   <div class="col-sm-12 col-md-12">
-    <app-environment [environment]="environment"></app-environment>
+    <app-environment
+      [project]="project.name"
+      [environment]="environment"
+    ></app-environment>
   </div>
   }
 </div>
