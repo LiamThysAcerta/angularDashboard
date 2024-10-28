@@ -36,7 +36,7 @@ export class ServerService {
   async getContainerDiccoRest(server: string): Promise<Status> {
     try {
       const response = await axios.get<HealthResponse>(
-        `https://dicco-rest-app.${server}.k8s.acerta.io/dicco-rest/actuator/health`
+        `https://dicco-rest-app.${server}.k8s.acerta.io/actuator/health`
       );
       const statusData = this.responseToStatus(response.data);
       return statusData;

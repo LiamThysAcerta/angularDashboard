@@ -1,25 +1,29 @@
-<h1>Position convert</h1>
-<p>
-  This tool helps you to quickly change the &commat;Position values for mpp
-  classes :D
+<h1 class="display-2">Position converter</h1>
+<p class="blockquote-footer">
+  This tool helps you to quickly change the &commat;Position(_) values for mpp
+  classes
 </p>
-<main>
-  <div class="grid-container" [formGroup]="positionForm">
-    <textarea
-      formControlName="input"
-      id="input"
-      rows="10"
-      class="grid-item item1"
-    ></textarea>
-    <div class="grid-item item2">
-      <span class="material-symbols-outlined">-></span>
-    </div>
-    <textarea
-      formControlName="output"
-      id="output"
-      rows="10"
-      class="grid-item item3"
-      readonly
-    ></textarea>
+<div class="grid-container" [formGroup]="positionForm">
+  <textarea
+    formControlName="input"
+    id="input"
+    rows="10"
+    class="grid-item"
+  ></textarea>
+  <div class="icon-container" (click)="copyAchievements()">
+    <svg
+      class="icon-example"
+      xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+    >
+      <path
+        d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"
+      />
+    </svg>
+    @if (showToast) {
+    <div class="toast">Copied to clipboard!</div>
+    }
   </div>
-</main>
+</div>
