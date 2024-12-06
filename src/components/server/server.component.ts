@@ -30,6 +30,8 @@ export class ServerComponent implements OnInit {
       this.getStatusContainer();
     } else if (this.project === 'Virtual machines') {
       this.getStatus();
+    } else if (this.project === 'Multi ESS') {
+      this.getStatus();
     } else {
       this.getStatusContaineDiccoRest();
     }

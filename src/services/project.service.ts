@@ -30,6 +30,12 @@ export class ProjectService {
           new Server('v02l0038'),
         ]),
       ]),
+      new Project('Multi ESS', [
+        new Environment('DEV / TST', [
+          new Server('v04l0040'),
+          new Server('v03l0040'),
+        ]),
+      ]),
       new Project('Containers dicco-rest', [
         new Environment('', [
           new Server('dev'),
