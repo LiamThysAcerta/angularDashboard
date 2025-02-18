@@ -4,6 +4,7 @@
   "newProjectRoot": "projects",
   "projects": {
     "angularDashboard": {
+      "i18n": { "sourceLocale": "nl-NL" },
       "projectType": "application",
       "schematics": {},
       "root": "",

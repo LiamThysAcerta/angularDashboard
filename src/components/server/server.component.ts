@@ -2,11 +2,12 @@ import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { ServerService } from '../../services/server.service';
 import Status from '../../classes/Status';
 import Server from '../../classes/Server';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-server',
   standalone: true,
-  imports: [],
+  imports: [DatePipe],
   templateUrl: './server.component.html',
   styleUrl: './server.component.css',
   encapsulation: ViewEncapsulation.None,
