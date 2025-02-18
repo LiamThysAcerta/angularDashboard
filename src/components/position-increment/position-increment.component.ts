@@ -40,7 +40,7 @@ export class PositionIncrementComponent implements OnInit {
       ?.setValue(modifiedText, { emitEvent: false });
   }
 
-  copyAchievements() {
+  copyText() {
     const pending = this.clipboard.beginCopy(this.positionForm.value.input!);
     let remainingAttempts = 3;
     const attempt = () => {
