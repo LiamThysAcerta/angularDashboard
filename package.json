@@ -7,7 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:angularDashboard": "node dist/angular-dashboard/server/server.mjs"
+    "serve:ssr:angularDashboard": "node dist/angular-dashboard/server/server.mjs",
+    "open": "ng serve -o",
+    "fast": "ng serve --live-reload=false",
+    "openfast": "ng serve --live-reload=false --open"
   },
   "private": true,
   "dependencies": {
