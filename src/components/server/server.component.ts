@@ -29,6 +29,8 @@ export class ServerComponent implements OnInit {
   ngOnInit() {
     if (this.project === 'Containers') {
       this.getStatusContainer();
+    } else if (this.project === 'Containers counter') {
+      this.getStatusContainerCounter();
     } else if (this.project === 'Virtual machines') {
       this.getStatus();
     } else if (this.project === 'Multi ESS') {
@@ -46,6 +48,13 @@ export class ServerComponent implements OnInit {
   async getStatusContainer() {
     this.status = await this.serverService.getContainer(this.server.name);
     this.url = `https://connect-frontend.${this.server.name}.k8s.acerta.io/AES/`;
+  }
+
+  async getStatusContainerCounter() {
+    this.status = await this.serverService.getContainerCounter(
+      this.server.name
+    );
+    this.url = `https://connect-tellers-frontend.${this.server.name}.k8s.acerta.io/AES/`;
   }
 
   async getStatusContaineDiccoRest() {

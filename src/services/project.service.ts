@@ -18,6 +18,9 @@ export class ProjectService {
           new Server('acc'),
         ]),
       ]),
+      new Project('Containers counter', [
+        new Environment('', [new Server('tst')]),
+      ]),
       new Project('Virtual machines', [
         new Environment('DEV', [new Server('v04l9431')]),
         new Environment('TST', [
