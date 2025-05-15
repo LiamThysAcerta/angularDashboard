@@ -54,7 +54,7 @@ export class ServerComponent implements OnInit {
     this.status = await this.serverService.getContainerCounter(
       this.server.name
     );
-    this.url = `https://connect-tellers-frontend.${this.server.name}.k8s.acerta.io/AES/`;
+    this.url = `https://connect-tellers-frontend.${this.server.name}.k8s.acerta.io/AESTELLER/`;
   }
 
   async getStatusContaineDiccoRest() {

@@ -36,7 +36,7 @@ export class ServerService {
   async getContainerCounter(server: string): Promise<Status> {
     try {
       const response = await axios.get<HealthResponse>(
-        `https://connect-tellers-frontend.${server}.k8s.acerta.io/AES/actuator/health`
+        `https://connect-tellers-frontend.${server}.k8s.acerta.io/AESTELLER/actuator/health`
       );
       const statusData = this.responseToStatus(response.data);
       return statusData;
