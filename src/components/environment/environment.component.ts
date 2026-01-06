@@ -13,7 +13,9 @@ import Server from '../../classes/Server';
 })
 export class EnvironmentComponent {
   @Input() project: String = '';
-  @Input() environment: Environment = new Environment('default', [
-    new Server('v00l0000'),
-  ]);
+  @Input() environment: Environment = new Environment(
+    crypto.randomUUID(),
+    'default',
+    [new Server('v00l0000')]
+  );
 }

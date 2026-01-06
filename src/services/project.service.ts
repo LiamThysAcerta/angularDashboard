@@ -12,38 +12,23 @@ export class ProjectService {
   constructor() {
     this.projects = [
       new Project('Containers', [
-        new Environment('', [
-          new Server('dev'),
-          new Server('tst'),
-          new Server('acc'),
+        new Environment(crypto.randomUUID(), 'dev', [
+          new Server('dev', 'project-', 'AES-PROJECT'),
+          new Server('dev', 'support-', 'AES-SUPPORT'),
         ]),
-      ]),
-      new Project('Containers counter', [
-        new Environment('', [new Server('tst')]),
-      ]),
-      new Project('Virtual machines', [
-        new Environment('DEV', [new Server('v04l9431')]),
-        new Environment('TST', [
-          new Server('v03l0037'),
-          new Server('v03l0038'),
+        new Environment(crypto.randomUUID(), 'tst', [
+          new Server('tst', '', 'AES'),
+          new Server('tst', '2-', 'AES2'),
+          new Server('tst', '3-', 'AES3'),
         ]),
-        new Environment('ACC', [
-          new Server('v02l0036'),
-          new Server('v02l0037'),
-          new Server('v02l0038'),
+        new Environment(crypto.randomUUID(), 'acc', [
+          new Server('acc', '', 'AES'),
         ]),
       ]),
       new Project('Multi ESS', [
-        new Environment('DEV / TST', [
+        new Environment(crypto.randomUUID(), 'DEV / TST', [
           new Server('v04l0040'),
           new Server('v03l0040'),
-        ]),
-      ]),
-      new Project('Containers dicco-rest', [
-        new Environment('', [
-          new Server('dev'),
-          new Server('tst'),
-          new Server('acc'),
         ]),
       ]),
     ];
